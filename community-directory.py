@@ -80,7 +80,7 @@ for url in member_urls.keys():
     location = data_divs[1].get_attribute('textContent').strip()
     file.write(url+',"'+location+'"\n')
 
-logging.info("Done outputting "+len(member_urls)+" profiles.")
+logging.info("Done outputting "+str(len(member_urls))+" profiles.")
 
 file.close()
 driver.quit()
